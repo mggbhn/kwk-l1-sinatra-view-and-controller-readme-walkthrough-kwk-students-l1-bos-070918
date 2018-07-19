@@ -11,7 +11,7 @@ class App < Sinatra::Base
   end
   
    get '/stats' do
-    erb :stats
+    erb :about
   end
 
 end
