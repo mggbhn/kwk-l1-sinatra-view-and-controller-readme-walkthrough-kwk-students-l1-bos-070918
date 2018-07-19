@@ -1,16 +1,16 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-  get '/reverse' do
-    erb :reverse
+  
+  get '/' do
+    erb :tabs
   end
-
-  post '/reverse' do
-    erb :reversed
+  
+  get '/home' do
+    erb :index
   end
-
-  get '/friends' do
-    # Write your code here!
-
+  
+   get '/stats' do
+    erb :stats
   end
 end
